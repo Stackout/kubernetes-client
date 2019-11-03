@@ -18,5 +18,12 @@ class IngressRouteTCP extends Model
 	 */
 	protected $schema = [
         'kind' => 'IngressRouteTCP'
-    ];
+	];
+	
+	/**
+	 * Whether or not the kind is plural.
+	 *
+	 * @var boolean
+	 */
+	protected $pluralKind = true;
 }
