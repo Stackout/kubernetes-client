@@ -25,5 +25,5 @@ class IngressRouteTCP extends Model
 	 *
 	 * @var boolean
 	 */
-	protected $pluralKind = false;
+	protected $pluralKind = true;
 }
