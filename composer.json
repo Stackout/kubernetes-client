@@ -27,7 +27,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Stackout\\Kubernetes\\": "src/"
+			"Maclof\\Kubernetes\\": "src/"
 		}
 	},
 	"autoload-dev": {
