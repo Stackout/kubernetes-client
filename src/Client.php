@@ -16,6 +16,8 @@ use Maclof\Kubernetes\Repositories\DeploymentRepository;
 use Maclof\Kubernetes\Repositories\EndpointRepository;
 use Maclof\Kubernetes\Repositories\EventRepository;
 use Maclof\Kubernetes\Repositories\IngressRepository;
+use Maclof\Kubernetes\Repositories\IngressRouteRepository;
+use Maclof\Kubernetes\Repositories\IngressRouteTCPRepository;
 use Maclof\Kubernetes\Repositories\JobRepository;
 use Maclof\Kubernetes\Repositories\NetworkPolicyRepository;
 use Maclof\Kubernetes\Repositories\NodeRepository;
@@ -28,29 +30,33 @@ use Maclof\Kubernetes\Repositories\ReplicationControllerRepository;
 use Maclof\Kubernetes\Repositories\SecretRepository;
 use Maclof\Kubernetes\Repositories\ServiceRepository;
 use Maclof\Kubernetes\Repositories\NamespaceRepository;
+use Maclof\Kubernetes\Repositories\MiddlewareRepository;
 use Maclof\Kubernetes\Models\PersistentVolume;
 
 /**
- * @method NodeRepository nodes()
- * @method QuotaRepository quotas()
- * @method PodRepository pods()
- * @method ReplicaSetRepository replicaSets()
- * @method ReplicationControllerRepository replicationControllers()
- * @method ServiceRepository services()
- * @method SecretRepository secrets()
- * @method EventRepository events()
  * @method ConfigMapRepository configMaps()
- * @method EndpointRepository endpoints()
- * @method PersistentVolumeClaimRepository persistentVolumeClaims()
- * @method PersistentVolumeRepository persistentVolume()
- * @method JobRepository jobs()
  * @method CronJobRepository cronJobs()
  * @method DaemonSetRepository daemonSets()
  * @method DeploymentRepository deployments()
+ * @method EndpointRepository endpoints()
+ * @method EventRepository events()
+ * @method HorizontalPodAutoscalerRepository horizontalPodAutoscalers()
  * @method IngressRepository ingresses()
+ * @method IngressRouteRepository ingressroutes()
+ * @method IngressRouteTCPRepository ingresseroutestcp()
+ * @method JobRepository jobs()
+ * @method MiddlewareRepository middlewares()
  * @method NamespaceRepository namespaces()
  * @method NetworkPolicyRepository networkPolicies()
- * @method HorizontalPodAutoscalerRepository horizontalPodAutoscalers()
+ * @method NodeRepository nodes()
+ * @method PersistentVolumeClaimRepository persistentVolumeClaims()
+ * @method PersistentVolumeRepository persistentVolume()
+ * @method PodRepository pods()
+ * @method QuotaRepository quotas()
+ * @method ReplicaSetRepository replicaSets()
+ * @method ReplicationControllerRepository replicationControllers()
+ * @method SecretRepository secrets()
+ * @method ServiceRepository services()
  */
 class Client
 {
@@ -282,6 +288,7 @@ class Client
 		}
 
 		$options['base_uri'] = $this->master;
+		$options['verify'] = false;
 
 		return new GuzzleClient($options);
 	}

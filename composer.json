@@ -1,11 +1,15 @@
 {
-	"name": "maclof/kubernetes-client",
+	"name": "stackout/kubernetes-client",
 	"description": "A simple yet elegant client for accessing and controlling a Kubernetes cluster.",
 	"keywords": ["kubernetes", "docker", "container", "cluster", "guzzle", "guzzlehttp"],
 	"authors": [
 		{
 			"name": "Marc Lough",
 			"homepage": "http://maclof.com"
+		},
+		{
+			"name": "Ryan Hein",
+			"homepage": "https://ryanhein.com"
 		}
 	],
 	"license" : "MIT",
