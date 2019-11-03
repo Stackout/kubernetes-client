@@ -288,6 +288,7 @@ class Client
 		}
 
 		$options['base_uri'] = $this->master;
+		$options['verify'] = false;
 
 		return new GuzzleClient($options);
 	}
