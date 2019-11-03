@@ -41,7 +41,7 @@ $ composer require maclof/kubernetes-client
 * Ingresses
 
 ### traefik.containo.us/v1alpha1
-* ingressroutetcp
+* ingressroutetcps
 * IngressRoutes
 * Middlewares
 

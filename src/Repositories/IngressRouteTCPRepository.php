@@ -4,7 +4,7 @@ use Maclof\Kubernetes\Collections\IngressRouteTCPCollection;
 
 class IngressRouteTCPRepository extends Repository
 {
-	protected $uri = 'ingressroutetcp';
+	protected $uri = 'ingressroutetcps';
 
 	protected function createCollection($response)
 	{

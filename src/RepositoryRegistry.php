@@ -39,7 +39,7 @@ class RepositoryRegistry implements \ArrayAccess, \Countable
 
         // traefik.containo.us/v1alpha1
         'ingressroutes'             => Repositories\IngressRouteRepository::class,
-        'ingressroutetcp'          => Repositories\IngressRouteTCPRepository::class,
+        'ingressroutetcps'          => Repositories\IngressRouteTCPRepository::class,
         'middlewares'               => Repositories\MiddlewareRepository::class,
 
         // networking.k8s.io/v1
