@@ -37,6 +37,11 @@ class RepositoryRegistry implements \ArrayAccess, \Countable
         // autoscaling/v2beta1
         'horizontalPodAutoscalers'  => Repositories\HorizontalPodAutoscalerRepository::class,
 
+        // traefik.containo.us/v1alpha1
+        'ingressroutes'             => Repositories\IngressRouteRepository::class,
+        'ingressroutetcp'          => Repositories\IngressRouteTCPRepository::class,
+        'middlewares'               => Repositories\MiddlewareRepository::class,
+
         // networking.k8s.io/v1
         'networkPolicies'        => Repositories\NetworkPolicyRepository::class,
     ];

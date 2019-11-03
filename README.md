@@ -40,6 +40,11 @@ $ composer require maclof/kubernetes-client
 * Daemon Sets
 * Ingresses
 
+### traefik.containo.us/v1alpha1
+* ingressroutetcp
+* IngressRoutes
+* Middlewares
+
 ### networking.k8s.io/v1
 * Network Policies
 
