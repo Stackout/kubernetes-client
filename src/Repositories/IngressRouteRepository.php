@@ -2,7 +2,7 @@
 
 use Maclof\Kubernetes\Collections\IngressRouteCollection;
 
-class IngressRoutesRepository extends Repository
+class IngressRouteRepository extends Repository
 {
 	protected $uri = 'ingressroutes';
 
